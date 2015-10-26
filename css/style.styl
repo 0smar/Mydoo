@@ -1,0 +1,241 @@
+@import 'jeet'
+
+yellowColor = rgb(255,242,0)
+
+@font-face
+	font-family ProximaNovaExtrabold
+	font-style normal
+	src url(../fonts/ProximaNovaBlack.otf)
+
+@font-face
+	font-family ProximaNovaLight
+	font-style normal
+	src url(../fonts/ProximaNovaLight.otf)
+
+@font-face
+	font-family BebasNeue
+	font-style normal
+	src url(../fonts/BebasNeue.otf)
+
+body 
+	font-family ProximaNovaLight
+	font-size 1.15em
+	background-color #FAFAFA
+section
+	width 100%
+	margin 0
+	padding 0
+.home
+	background url('../img/img-3.jpg') no-repeat center center
+	background-size cover
+	height 900px
+.mask
+	width 100%
+	height inherit
+	background-color rgba(0,0,0,0.3)
+	.logo
+		align(both)
+		text-align center
+		width 80%
+		margin 0 auto
+		img
+			width 100%
+			max-width 500px
+.button
+	width 100%
+	max-width 320px
+	margin 0 auto
+	height 40px
+	background-color black 
+	font-family BebasNeue
+	border-radius 20px
+	display table
+	a
+		text-decoration none
+		color yellowColor
+		display table-cell
+		vertical-align middle
+		font-size 1.2em
+		transition all 1s ease
+	&:hover
+		a 
+			color white
+.info
+	height 100%
+	padding-top 5em
+	overflow hidden
+	.text_50
+		padding-top 3em	
+		margin 0 auto
+		width 70%
+		p 
+			height inherit
+			vertical-align middle
+			text-align justify
+	.render
+		text-align center
+		iframe
+			width 40%
+			height 300px
+			border 10px black solid
+.highlight 
+	font-family BebasNeue
+	font-size 1.3em
+
+#section_three
+	padding-bottom 5em
+	padding-top 3em
+	text-align center
+	overflow hidden
+	.emojis
+		width 70%
+		margin 0 auto
+		margin-top 3em
+		text-align center
+		.emoji 
+			width 19%
+			display inline-block
+			min-width 150px
+			text-align center
+			img
+				width 40%
+			h3
+				font-family BebasNeue
+				color yellowColor
+				text-shadow 3px 3px 3px #9E9E9E
+				font-size 2em
+				text-align center
+#section_four
+	padding-top 3em
+	padding-bottom 5em
+	text-align center
+	height 500px
+	background url('../img/img-2.jpg') no-repeat center center
+	background-attachment fixed 
+	background-size cover
+.contact
+	padding-top 3em
+	padding-bottom 3em
+	background-color #212121
+	color white
+	.form_data
+		width 80%
+		text-align center
+		margin 0 auto
+		p 
+			width 50%
+			margin 0 auto
+			font-size 1.2em
+			margin-top 1em
+			margin-bottom 2em
+		.kick
+			width 280px
+			padding-top 4em
+			margin 0 auto
+			img 
+				width 100%
+		form 
+			input[type="email"]
+				font-size 18px
+				font-family ProximaNovaLight
+				width 400px
+				line-height 2em
+				padding-left 10px
+				margin 10px
+			input[type="text"]
+				font-size 18px
+				font-family ProximaNovaLight
+				width 400px
+				line-height 2em
+				padding-left 10px
+				margin 10px
+			input[type="submit"]
+				-webkit-appearance none
+				text-align center
+				font-size 18px
+				font-family ProximaNovaExtrabold
+				letter-spacing 0.1em
+				width 200px
+				line-height 2em
+				margin 10px
+				border none
+				cursor pointer
+				padding-left 10px
+				transition 0.5s background-color ease
+				&:hover 
+					background-color yellowColor
+.footer 
+	background-color #000000
+	text-align center
+	.logo
+		color #616161
+		margin-left 20%
+		padding-top 2em
+		padding-bottom 2em
+		display inline-table
+		width 49%
+		vertical-align middle
+		margin 0 auto
+		min-width 160px
+	#nuvaLogo	
+		text-align right	
+		b 
+			color #616161
+			margin-left 20%
+		img 
+			width 20%
+			min-width 160px
+			margin 0 auto
+			padding-right 10%
++below(769px)
+	.home
+		height 600px
+	.info
+		height 100%
+		padding-top 5em
+		overflow hidden
+		.text_50
+			padding-top 3em	
+			margin 0 auto
+			width 70%
+			p 
+				height inherit
+				vertical-align middle
+				text-align justify
+		.render
+			text-align center
+			iframe
+				width 80%
+				height 220px
+				border 10px black solid
+	#section_three
+		background-attachment scroll
+		background-size cover
+		h2 
+			font-size 3em
+		.desc 
+			width 70%
+	#section_four
+		h2 
+			font-size 3em
+		p 
+			width 85%
+		.emojis
+			width 85%
+	.contact 
+		.form_data
+			width 90%
+			h1 
+				font-size 1.8em
+			p 
+				width 85%
+			.icons
+				width 50%
+			form 
+				input[type="email"]
+					width 90%
+					
+				input[type="text"]
+					width 90%
+				input[type="submit"]
+					width 60%
